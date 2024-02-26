@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="fertilizingSowingMachine">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>8312</name>
+        <specs>
+            <neededPower>260</neededPower>
+            <workingWidth>11.0</workingWidth>
+            <combination>Liquid Tank, Liquid Cart</combination>
+        </specs>
+        <functions>
+            <function>$l10n_function_sowingMachine</function>
+        </functions>
+        <image>store.png</image>
+        <price>55000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>Spudnik</brand>
+        <category>potatoHarvesting</category>
+        <vertexBufferMemoryUsage>3036068</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>847500</indexBufferMemoryUsage>
+        <textureMemoryUsage>15248344</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_planter</typeDesc>
+        <filename>8312.i3d</filename>
+        <size width="8" length="9"/>
+        <speedLimit value="10"/>
+        <components>
+            <component centerOfMass="0.00 2.41 1.55" solverIterationCount="10" mass="8820"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+    </base>
+	
+	<!--designConfigurations>
+		<designConfiguration name="No Flag" price="0">
+			<objectChange node="0>7|0" visibilityActive="false"/>
+			<objectChange node="0>7|1" visibilityActive="false"/>
+			<objectChange node="0>7|2" visibilityActive="false"/>
+			<objectChange node="0>7|3" visibilityActive="false"/>
+        </designConfiguration>
+        <designConfiguration name="American Flag" price="50">
+			<objectChange node="0>7|0" visibilityActive="true"/>
+			<objectChange node="0>7|1" visibilityActive="false"/>
+			<objectChange node="0>7|2" visibilityActive="false"/>
+			<objectChange node="0>7|3" visibilityActive="true"/>
+			</designConfiguration>
+		<designConfiguration name="Canadian Flag" price="50">
+			<objectChange node="0>7|0" visibilityActive="false"/>
+			<objectChange node="0>7|1" visibilityActive="false"/>
+			<objectChange node="0>7|2" visibilityActive="true"/>
+			<objectChange node="0>7|3" visibilityActive="true"/>
+        </designConfiguration>
+		<designConfiguration name="Spudnik Flag" price="50">
+			<objectChange node="0>7|0" visibilityActive="false"/>
+			<objectChange node="0>7|1" visibilityActive="true"/>
+			<objectChange node="0>7|2" visibilityActive="false"/>
+			<objectChange node="0>7|3" visibilityActive="true"/>
+        </designConfiguration>
+    </designConfigurations-->
+	
+	<!--vehicleTypeConfigurations>
+		
+		<vehicleTypeConfiguration name="No Flag" price="0" vehicleType="fertilizingSowingMachine">
+			<objectChange node="0>8|0" visibilityActive="false"/>
+			<objectChange node="0>8|1" visibilityActive="false"/>
+			<objectChange node="0>8|2" visibilityActive="false"/>
+			<objectChange node="0>8|3" visibilityActive="false"/>
+		</vehicleTypeConfiguration>
+		<vehicleTypeConfiguration name="American Flag" price="50" vehicleType="fertilizingSowingMachine">
+			<objectChange node="0>8|0" visibilityActive="true"/>
+			<objectChange node="0>8|1" visibilityActive="false"/>
+			<objectChange node="0>8|2" visibilityActive="false"/>
+			<objectChange node="0>8|3" visibilityActive="true"/>
+		</vehicleTypeConfiguration>	
+		<vehicleTypeConfiguration name="Candian Flag" price="50" vehicleType="fertilizingSowingMachine">
+			<objectChange node="0>8|0" visibilityActive="false"/>
+			<objectChange node="0>8|1" visibilityActive="false"/>
+			<objectChange node="0>8|2" visibilityActive="true"/>
+			<objectChange node="0>8|3" visibilityActive="true"/>
+		</vehicleTypeConfiguration>	
+		<vehicleTypeConfiguration name="Spudnik Flag" price="50" vehicleType="fertilizingSowingMachine">
+			<objectChange node="0>8|0" visibilityActive="false"/>
+			<objectChange node="0>8|1" visibilityActive="true"/>
+			<objectChange node="0>8|2" visibilityActive="false"/>
+			<objectChange node="0>8|3" visibilityActive="true"/>
+		</vehicleTypeConfiguration>
+	</vehicleTypeConfigurations-->
+	
+    <powerConsumer forceNode="0>" maxForce="23" />
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="3.9" repr="0>0|2|5|0|0"  forcePointRatio="0.5" radius="0.62" initialCompression="40" suspTravel="0.05" spring="46" damper="30"/>
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <tire isInverted="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="3.9" repr="0>0|2|5|0|1" forcePointRatio="0.5" radius="0.62" initialCompression="40" suspTravel="0.05" spring="46" damper="30"/>
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <tire isInverted="false" />
+                    </wheel>
+					<wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="3.9" repr="0>0|2|5|0|3"  forcePointRatio="0.5" radius="0.62" initialCompression="40" suspTravel="0.05" spring="46" damper="30"/>
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <tire isInverted="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="3.9" repr="0>0|2|5|0|2" forcePointRatio="0.5" radius="0.62" initialCompression="40" suspTravel="0.05" spring="46" damper="30"/>
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <tire isInverted="false" />
+                    </wheel>
+					<wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="3.9" repr="0>0|2|5|0|5"  forcePointRatio="0.5" radius="0.62" initialCompression="40" suspTravel="0.05" spring="46" damper="30"/>
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <tire isInverted="false" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="3.9" repr="0>0|2|5|0|4" forcePointRatio="0.5" radius="0.62" initialCompression="40" suspTravel="0.05" spring="46" damper="30"/>
+                        <steeringAxle scale="-0.7" rotMax="10" rotMin="-10"/>
+                        <tire isInverted="false" />
+                    </wheel>
+					<wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="true" >
+                        <physics restLoad="1.9" repr="0>1|1" forcePointRatio="0.3" radius="0.38" initialCompression="30" suspTravel="0.1" spring="59" damper="30" rotationDamping="0.002" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="false" >
+                        <physics restLoad="1.9" repr="0>1|0" forcePointRatio="0.3" radius="0.38" initialCompression="30" suspTravel="0.1" spring="59" damper="30" rotationDamping="0.002" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <hubs>
+            <hub linkNode="0>0|2|5|0|0"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.151 0.151 0.151" />
+            <hub linkNode="0>0|2|5|0|1" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.151 0.151 0.151" />
+            <hub linkNode="0>0|2|5|0|3"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.151 0.151 0.151" />
+            <hub linkNode="0>0|2|5|0|2" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.151 0.151 0.151" />
+			<hub linkNode="0>0|2|5|0|5"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.151 0.151 0.151" />
+            <hub linkNode="0>0|2|5|0|4" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.151 0.151 0.151" />
+            <hub linkNode="0>1|1"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true" scale="0.151 0.151 0.151" />
+            <hub linkNode="0>1|0" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false"  scale="0.151 0.151 0.151" />
+        </hubs>
+    </wheels>
+  
+	<speedRotatingParts>
+        <!--center-->
+		<speedRotatingPart node="0>0|1|0|0|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|0|0|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|0|1|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|0|1|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|0|2|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|0|2|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+		<speedRotatingPart node="0>0|1|1|0|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|1|0|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|1|1|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|1|1|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|1|2|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|1|1|2|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+		<!--left-->
+		<speedRotatingPart node="0>0|2|1|1|1|0|0|0|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|1|1|1|0|0|0|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|1|1|1|0|0|1|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|1|1|1|0|0|1|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|1|1|1|0|0|2|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|1|1|1|0|0|2|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+		<!--right-->
+		<speedRotatingPart node="0>0|2|0|1|1|0|0|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|0|1|1|0|0|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|0|1|1|0|1|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|0|1|1|0|1|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|0|1|1|0|2|0|0" onlyActiveWhenLowered="true" radius="0.184"/>
+        <speedRotatingPart node="0>0|2|0|1|1|0|2|1|0" onlyActiveWhenLowered="true" radius="0.184"/>
+    </speedRotatingParts>
+
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0|2|8|0" jointType="trailerLow" attacherHeight="0.6"/>
+        </inputAttacherJoints>
+		<support animationName="moveSupport"/>
+        <brakeForce force="0.9"/>
+    </attachable>
+	
+	<connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="0>0|2|8|2|0" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|2|8|2|1" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicIn" node="0>0|2|8|2|2" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|2|8|2|3" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicIn" node="0>0|2|8|2|4" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|2|8|2|5" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicIn" node="0>0|2|8|2|6" length="1" diameter="0.02"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|2|8|2|7" length="1" diameter="0.02"/>
+		
+		<!--drawbar-->
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|0"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|0" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|1"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|1" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|2"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|2" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|3"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|3" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|4"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|4" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|5"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|5" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|6"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|6" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>5|7"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|8|2|7" straighteningFactor="0"/>
+        </localHose>
+		<!--leftARM-->
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|0"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|0" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|1"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|1" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|2"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|2" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|3"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|3" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|4"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|4" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|5"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|5" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|6"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|6" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|7"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|7" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|8"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|1|1|7|0" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|9"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|1|1|7|1" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|10"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|1|1|7|2" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|1|4|11"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|1|1|7|3" straighteningFactor="0"/>
+        </localHose>
+		<!--rightARM-->
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|9"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|1" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|8"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|0" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|10"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|2" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|11"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|3" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|4"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|4" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|5"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|5" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|6"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|6" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|7"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|7" straighteningFactor="0"/>
+        </localHose>
+		
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|0"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|0|1|7|0" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|1"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|0|1|7|1" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|2"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|0|1|7|2" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|2|0|4|3"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|2|0|1|7|3" straighteningFactor="0"/>
+        </localHose>
+
+		<!--extra-->
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|0|4"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|8" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|0|5"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|9" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|0|6"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|10" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|0|7"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|0|11" straighteningFactor="0"/>
+        </localHose>
+		
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|1|8"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|4" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|1|9"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|5" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|1|10"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|6" straighteningFactor="0"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="0>0|10|1|11"  length="0" diameter="0.02" straighteningFactor="0.2" isWorldSpaceHose="true"/>
+            <target attacherJointIndices="1" type="CABLE_BOUNDLE" node="0>0|10|1|7" straighteningFactor="0"/>
+        </localHose>
+		
+	</connectionHoses>
+	
+	<powerTakeOffs>
+		<!--left-->
+        <local startNode="0>0|2|1|1|8|0" endNode="0>0|2|1|1|8|1" />
+		<local startNode="0>0|2|1|1|8|2" endNode="0>0|2|1|1|8|3" />
+		<!--right-->
+        <local startNode="0>0|2|0|1|8|0" endNode="0>0|2|0|1|8|1" />
+		<local startNode="0>0|2|0|1|8|2" endNode="0>0|2|0|1|8|3" />
+		<!--Center-->
+		<local startNode="0>0|11|0" endNode="0>0|11|1" />
+		<local startNode="0>0|11|2" endNode="0>0|11|3" />
+		<local startNode="0>0|11|7" endNode="0>0|11|6" />
+		<local startNode="0>0|11|5" endNode="0>0|11|4" />
+    </powerTakeOffs>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="0>" forceFactor="1" threshold="0.01" depthNode="0>3|3"/>
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="sowingMachine" functionName="processSowingMachineArea">
+            <area startNode="0>3|0" widthNode="0>3|1" heightNode="0>3|2" />
+            <groundReferenceNode index="1" />
+        </workArea>
+    </workAreas>
+
+    <cylindered>
+        <movingTools>
+            <!--drawbar-->
+			<movingTool node="0>0|2|8">
+                <inputAttacherJoint value="true"/>
+                <dependentPart node="0>0|2|8|1"/>
+				<dependentPart node="0>0|2|4|6"/>
+            </movingTool>
+			<!--wheel assembly-->
+            <movingTool node="0>0|2|5" wheelIndices="1 2 3 4 5 6" playSound="true">
+                <dependentPart node="0>0|2|5|1"/>
+				<dependentPart node="0>0|2|4|7"/>
+            </movingTool>
+			<!-- left distributor arm-->
+            <movingTool node="0>0|2|6" playSound="true">
+                <dependentPart node="0>0|2|6|1"/>
+				<dependentPart node="0>0|2|4|0"/>
+            </movingTool>
+			<!-- rightArm distributor arm-->
+			<movingTool node="0>0|2|7" playSound="true">
+                <dependentPart node="0>0|2|7|1"/>
+				<dependentPart node="0>0|2|4|1"/>
+            </movingTool>
+			<!--left discharge-->
+            <movingTool node="0>0|2|3" playSound="true" >
+                <dependentPart node="0>0|2|3|0"/>
+				<dependentPart node="0>0|2|4|5"/>
+            </movingTool>
+			<!--right discharge-->
+            <movingTool node="0>0|2|2" playSound="true" >
+                <dependentPart node="0>0|2|2|0"/>
+				<dependentPart node="0>0|2|4|4"/>
+            </movingTool>
+			<!--left fold arm-->
+            <movingTool node="0>0|2|1" playSound="true">
+                <dependentPart node="0>0|2|1|0"/>
+				<dependentPart node="0>0|2|4|2"/>
+            </movingTool>
+			<!--right fold arm-->
+            <movingTool node="0>0|2|0" playSound="true" >
+                <dependentPart node="0>0|2|0|0"/>
+				<dependentPart node="0>0|2|4|3"/>
+            </movingTool>
+			<!--left scissor-->
+            <movingTool node="0>0|2|1|2" playSound="true" >
+                <dependentPart node="0>0|2|1|2|1"/>
+				<dependentPart node="0>0|2|1|3"/>
+            </movingTool>
+			<!--right scissor-->
+            <movingTool node="0>0|2|0|2" playSound="true" >
+                <dependentPart node="0>0|2|0|2|1"/>
+				<dependentPart node="0>0|2|0|3"/>
+            </movingTool>
+			<!--left disc arms-->
+			<movingTool node="0>0|2|1|1|1" playSound="true" >
+                <dependentPart node="0>0|2|1|1|2"/>
+				<dependentPart node="0>0|2|1|1|1|1"/>
+            </movingTool>
+			<!--right disc arms-->
+			<movingTool node="0>0|2|0|1|1" playSound="true" >
+                <dependentPart node="0>0|2|0|1|2"/>
+				<dependentPart node="0>0|2|0|1|1|1"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <!--wheel hyds-->
+			<movingPart node="0>0|2|4|7" referencePoint="0>0|2|5|1" referenceFrame="0>0|2|5|1" >
+			</movingPart>
+			<movingPart node="0>0|2|5|1" referencePoint="0>0|2|4|7" referenceFrame="0>0|2|4|7" >
+			</movingPart>
+			<!--distributor arms hyd-->
+			<movingPart node="0>0|2|4|0" referencePoint="0>0|2|6|1" referenceFrame="0>0|2|6|1" >
+			</movingPart>
+			<movingPart node="0>0|2|6|1" referencePoint="0>0|2|4|0" referenceFrame="0>0|2|4|0" >
+			</movingPart>
+			<movingPart node="0>0|2|4|1" referencePoint="0>0|2|7|1" referenceFrame="0>0|2|7|1" >
+			</movingPart>
+			<movingPart node="0>0|2|7|1" referencePoint="0>0|2|4|1" referenceFrame="0>0|2|4|1" >
+			</movingPart>			
+			<!--draw bar hyd-->
+			<movingPart node="0>0|2|4|6" referencePoint="0>0|2|8|1" referenceFrame="0>0|2|8|1" >
+			</movingPart>
+			<movingPart node="0>0|2|8|1" referencePoint="0>0|2|4|6" referenceFrame="0>0|2|4|6" >
+			</movingPart>			
+			<!--discharge hyds-->
+			<movingPart node="0>0|2|3|0" referencePoint="0>0|2|4|5" referenceFrame="0>0|2|4|5" >
+			</movingPart>
+			<movingPart node="0>0|2|4|5" referencePoint="0>0|2|3|0" referenceFrame="0>0|2|3|0" >
+			</movingPart>
+			<movingPart node="0>0|2|2|0" referencePoint="0>0|2|4|4" referenceFrame="0>0|2|4|4" >
+			</movingPart>
+			<movingPart node="0>0|2|4|4" referencePoint="0>0|2|2|0" referenceFrame="0>0|2|2|0" >
+			</movingPart>		
+			<!--fold hyds-->
+			<movingPart node="0>0|2|1|0" referencePoint="0>0|2|4|2" referenceFrame="0>0|2|4|2" >
+			</movingPart>
+			<movingPart node="0>0|2|4|2" referencePoint="0>0|2|1|0" referenceFrame="0>0|2|1|0" >
+			</movingPart>
+			<movingPart node="0>0|2|0|0" referencePoint="0>0|2|4|3" referenceFrame="0>0|2|4|3" >
+			</movingPart>
+			<movingPart node="0>0|2|4|3" referencePoint="0>0|2|0|0" referenceFrame="0>0|2|0|0" >
+			</movingPart>
+			<!--scissor hyds-->
+			<movingPart node="0>0|2|1|3" referencePoint="0>0|2|1|2|1" referenceFrame="0>0|2|1|2|1" >
+			</movingPart>
+			<movingPart node="0>0|2|1|2|1" referencePoint="0>0|2|1|3" referenceFrame="0>0|2|1|3" >
+			</movingPart>
+			<movingPart node="0>0|2|0|3" referencePoint="0>0|2|0|2|1" referenceFrame="0>0|2|0|2|1" >
+			</movingPart>
+			<movingPart node="0>0|2|0|2|1" referencePoint="0>0|2|0|3" referenceFrame="0>0|2|0|3" >
+			</movingPart>
+			<!--scissor arms-->
+			<movingPart node="0>0|2|0|1|0" referencePoint="0>0|2|0|2|0" referenceFrame="0>0|2|0|2|0" isActiveDirty="true" maxUpdateDistance="50" limitedAxis="3"/>
+			<movingPart node="0>0|2|1|1|0" referencePoint="0>0|2|1|2|0" referenceFrame="0>0|2|1|2|0" isActiveDirty="true" maxUpdateDistance="50" limitedAxis="3"/>
+			<!--left disc arms-->
+			<movingPart node="0>0|2|1|1|2" referencePoint="0>0|2|1|1|1|1" referenceFrame="0>0|2|1|1|1|1" >
+			</movingPart>
+			<movingPart node="0>0|2|1|1|1|1" referencePoint="0>0|2|1|1|2" referenceFrame="0>0|2|1|1|2" >
+			</movingPart>
+			<!--right disc arms-->
+			<movingPart node="0>0|2|0|1|2" referencePoint="0>0|2|0|1|1|1" referenceFrame="0>0|2|0|1|1|1" >
+			</movingPart>
+			<movingPart node="0>0|2|0|1|1|1" referencePoint="0>0|2|0|1|2" referenceFrame="0>0|2|0|1|2" >
+			</movingPart>
+		</movingParts>
+        <sounds>
+            <hydraulic template="defaultHydraulicSound" linkNode="0>"/>
+        </sounds>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="potato seeds" capacity="8220">
+                        <exactFillRootNode node="0>2|1" />
+                    </fillUnit>
+					<fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="sprayer" capacity="1"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="0>2|0" fillUnitIndex="1">
+                    </volume>
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="0>2|2" width="1.5" length="1.0" />
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+
+    <turnOnVehicle turnOffIfNotAllowed="true" />
+
+    <sowingMachine fillUnitIndex="1">
+        <seedFruitTypes>potato</seedFruitTypes>
+		<fieldGroundType value="RIDGE" />
+        <needsActivation value="true" />
+		
+		<animationNodes>
+			<animationNode class="ScrollingAnimation" node="0>0|2|0|1|4"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|2|0|1|4|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|2|0|1|5"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|2|0|1|5|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|2|0|1|6"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|2|0|1|6|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|2|1|1|4"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|2|1|1|4|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|2|1|1|5"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|2|1|1|5|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|2|1|1|6"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|2|1|1|6|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+		
+			<animationNode class="ScrollingAnimation" node="0>0|4"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|4|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|5"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|5|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|6"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|6|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|7"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|7|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|8"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|8|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+			<animationNode class="ScrollingAnimation" node="0>0|9"          shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" />
+            <animationNode class="ScrollingAnimation" node="0>0|9|0"        shaderParameterName="scrollPosition" scrollSpeed="0.25"  scrollLength="0.166" type="seeds"/>
+		</animationNodes>
+        <sounds>
+            <work template="DEFAULT_CULTIVATOR_WORK" linkNode="0>" />
+        </sounds>
+    </sowingMachine>
+
+	<workParticles>
+		<particleAnimation>
+			<!--right-->
+			<node node="0>0|2|0|1|3|0" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|1" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|2" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|3" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|4" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|5" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|6" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|7" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|0|1|3|8" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<!--Left-->			
+			<node node="0>0|2|1|1|3|2" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|1" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|0" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|3" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|4" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|5" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|6" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|7" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<node node="0>0|2|1|1|3|8" refNodeIndex="1" materialType="SOIL" maxDepth="-0.1" />
+			<!--Center-->
+			<node node="0>0|3|0|0" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|1" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|2" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|3" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|4" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|5" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|6" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|7" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|8" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|9" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|10" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|11" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|12" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|13" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|14" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|15" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|16" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+			<node node="0>0|3|0|17" refNodeIndex="1" materialType="SOIL" maxDepth="-0.01" />
+		</particleAnimation>
+	</workParticles>
+
+    <sprayer fillUnitIndex="2">
+        <usageScales workingWidth="11.0" scale="1" />
+        <needsActivation value="false" />
+    </sprayer>
+
+    <animations>
+        <!-- folding, from work to transport -->
+        <animation name="folding">
+            <part node="0>0|2|5" startTime="0" endTime="1.5" startRot="0 0 0" endRot="-15 0 0" />
+            <part node="0>0|2|8" startTime="0" endTime="1.5" startRot="177 0 180" endRot="165 0 180" />
+
+            <part node="0>0|2|3"  startTime="3.5" endTime="4" startRot="180 0 180" endRot="180 0 90" />
+            <part node="0>0|2|2" startTime="3.5" endTime="4" startRot="180 0 -180" endRot="180 0 -90" />
+			
+			<part node="0>0|2|6|0" startTime="3.5" endTime="4.5" startTrans="1.159 -0.435 -0.003" endTrans="1.159 -0.435 0.44" />
+			<part node="0>0|2|7|0" startTime="3.5" endTime="4.5" startTrans="-1.159 -0.435 -0.003" endTrans="-1.159 -0.435 0.44" />
+			<part node="0>0|2|1|1|1"  startTime="3.5" endTime="4.5" startRot="5 0 0" endRot="68 0 0" />
+            <part node="0>0|2|0|1|1" startTime="3.5" endTime="4.5" startRot="5 0 0" endRot="68 0 0" />
+
+            <part node="0>0|2|6"  startTime="4.5" endTime="7.0" startRot="-180 0 180" endRot="-180 0 90" />
+            <part node="0>0|2|7" startTime="4.5" endTime="7.0" startRot="180 0 -180" endRot="180 0 -90" />
+
+            <part node="0>0|2|0"  startTime="7.0" endTime="12.0" startRot="180 0 -180" endRot="180 0 -90" />
+            <part node="0>0|2|0|1" startTime="7.0" endTime="12.0" startRot="0 0 0" endRot="0 0 90" />
+			<part node="0>0|2|0|2" startTime="7.0" endTime="12.0" startRot="0 0 0" endRot="0 0 86.586" />
+			
+			<part node="0>0|2|1"  startTime="8.0" endTime="14.0" startRot="-180 0 180" endRot="-180 0 90" />
+            <part node="0>0|2|1|1" startTime="8.0" endTime="14.0" startRot="0 0 0" endRot="0 0 -90" />
+			<part node="0>0|2|1|2" startTime="8.0" endTime="14.0" startRot="0 0 0" endRot="0 0 -86.586" />
+        </animation>
+		
+		<animation name="moveSupport">
+            <part node="0>10" startTime="0.0" endTime="0.1" startTrans="0.295 .5 3.855" endTrans="0.295 -.5 3.855" visibility="false"/>
+			<part node="0>10" startTime="0.1" endTime="0.2" startTrans="0.295 .5 3.855" endTrans="0.295 -.5 3.855" visibility="true"/>
+            <sound template="clackVar6"  startTime="0.09" direction="-1" volumeScale="1.2" pitchScale="1.2" linkNode="0>0|2|8|0"/>
+            <sound template="metalClose" startTime="0.01" direction="-1" volumeScale="0.9" pitchScale="2.2" linkNode="0>0|2|8|0"/>
+        </animation>
+    </animations>
+
+    <foldable>
+		<foldingConfigurations>
+            <foldingConfiguration>
+				<foldingParts startAnimTime="1" turnOnFoldDirection="-1" foldMiddleAnimTime="0.13" turnOnFoldMaxLimit="0.126" turnOnFoldMinLimit="0">
+					<foldingPart animationName="folding" speedScale="0.5" />
+				</foldingParts>
+			</foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+	
+    <ai>
+        <areaMarkers leftNode="0>4|0" rightNode="0>4|1" backNode="0>4|2" />
+        <sizeMarkers leftNode="0>4|0" rightNode="0>4|1" backNode="0>4|2" />
+        <needsLowering value="true"/>
+        <allowTurnBackward value="false" />
+        <toolReverserDirectionNode node="0>4|2" />
+		<agentAttachment width="2.4" height="2.1" length="8.45" lengthOffset="0.8"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.6" maxX="1.6" minZ="-3.3" maxZ="2.8 " yOffset="0.4" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+</vehicle>

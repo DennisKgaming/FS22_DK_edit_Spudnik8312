@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="62">
+    <author>Gilbertson Mods</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Spudnik 8312</en>
+    </title>
+    <description>
+        <en>Spudnik 8312</en>
+    </description>
+    <iconFilename>store.dds</iconFilename>
+    <multiplayer supported="true"/>
+    <storeItems>
+        <storeItem xmlFilename="8312.xml"/>
+    </storeItems>
+    <brands>
+        <brand name="Spudnik" title="Spudnik" image="brand_akpil.dds"/>
+    </brands>
+</modDesc>
